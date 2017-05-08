@@ -1,0 +1,58 @@
+body {
+  /*padding: 50px;*/
+  font: 14px Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.header {
+  color: #ffffff;
+  background-image: url('/images/banner-dark.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  width: 100%;
+}
+
+.container {
+  padding: 20px;
+  min-height: 200px;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-logo-container {
+  position: relative;
+}
+
+.footer-logo {
+  height: 30px;
+  padding: 20px;
+  float: right;
+}
+
+li {
+  list-style: none;
+  padding-bottom: 10px;
+}

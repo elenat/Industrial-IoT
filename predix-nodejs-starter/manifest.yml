@@ -1,0 +1,18 @@
+---
+applications:
+- name: jt-predix-nodejs-starter
+  memory: 128M
+  buildpack: nodejs_buildpack
+  #command:  DEBUG=express:* node app.js
+  command:  node app.js
+services:
+  - jt-secure-uaa-instance
+env:
+    node_env: cloud
+    uaa_service_label : predix-uaa
+    clientId: jt-client-id 
+    base64ClientCredential: anQtY2xpZW50LWlkOmpheTEyMw== 
+    # Following properties configured only for Timeseries WindData service Integration
+    #windServiceUrl: "{URL of the microservice <your-name>-winddata-timeseries-service}, e.g.  http://your-name-winddata-timeseries-service.run.asw-usw02-pr.predix.io"
+    windServiceYearlyApi : /services/windservices/yearly_data/sensor_id/
+    winddatatag : "Compressor-2015:CompressionRatio"
